@@ -1,66 +1,19 @@
-import React from 'react'
-import Link from 'next/link'
-import Head from 'next/head'
-import Nav from './layout'
-import Layout from './layout'
-function About() {
-    return (
-        
-<div class="display-5">
-<Layout> </Layout>
-<div class="col-md-6 col-sm-12 mx-auto">
-      
-<link href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" rel="stylesheet"></link>        
-<form class="form-horizontal" action='' method="POST">
-  <fieldset>
-    <div id="legend">
-     
-      <legend class="">Register</legend>
-    </div>
-    <div class="control-group ">
-     
-      <label class="control-label"  for="username">Username</label>
-      <div class="controls">
-        <input type="text" id="username" name="username" placeholder="" class="input-xlarge"/>
-        <p class="help-block">Username can contain any letters or numbers, without spaces</p>
+import React from "react";
+import Link from "next/link";
+import Head from "next/head";
+import Nav from "./layout";
+import Header from "../components/header";
+import Signup from "../components/signup";
+import "bootstrap/dist/css/bootstrap.css";
+function SignUp() {
+  return (
+    <div>
+      <Header></Header>
+      <div>
+        <Signup></Signup>
       </div>
     </div>
- 
-    <div class="control-group">
-      
-      <label class="control-label" for="email">E-mail</label>
-      <div class="controls">
-        <input type="text" id="email" name="email" placeholder="" class="input-xlarge"/>
-        <p class="help-block">Please provide your E-mail</p>
-      </div>
-    </div>
- 
-    <div class="control-group">
-     
-      <label class="control-label" for="password">Password</label>
-      <div class="controls">
-        <input type="password" id="password" name="password" placeholder="" class="input-xlarge"/>
-        <p class="help-block">Password should be at least 4 characters</p>
-      </div>
-    </div>
- 
-    <div class="control-group">
-     
-      <label class="control-label"  for="password_confirm">Password (Confirm)</label>
-      <div class="controls">
-        <input type="password" id="password_confirm" name="password_confirm" placeholder="" class="input-xlarge"/>
-        <p class="help-block">Please confirm password</p>
-      </div>
-    </div>
- 
-    <div class="control-group">
-      
-      <div class="controls">
-        <button class="btn btn-success">Register</button>
-      </div>
-    </div>
-  </fieldset>
-</form>  </div></div>  )
-  }
-  
-  export default About;
+  );
+}
+
+export default SignUp;

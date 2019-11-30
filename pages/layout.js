@@ -1,14 +1,15 @@
-import React from 'react'
-import Link from 'next/link'
-import Head from 'next/head'
-import Nav from '../components/nav'
+import React from "react";
+import Link from "next/link";
+import Head from "next/head";
+import Nav from "../components/nav";
+import Header from "../components/header";
+import Sidebar from "../components/sidebar";
 
 function Layout(props) {
-return <Nav></Nav>
+  return [<Header></Header>, <Sidebar></Sidebar>];
 
-
-    {props.children}
-       
-
+  {
+    props.children;
+  }
 }
 export default Layout;
