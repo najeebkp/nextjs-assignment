@@ -1,12 +1,14 @@
 import Link from "next/link";
-import Nav from "../components/nav";
+
 import fetch from "isomorphic-unfetch";
 import React, { Component } from "react";
 import PostData from "../public/sample_data.json";
 import { useRouter } from "next/router";
-import Header from "../components/header";
-import Sidebar from "../components/sidebar";
 import Layout from "./layout";
+import Nav from "./layout";
+import Header from "../components/header";
+import NavBar from "../components/navbar";
+import Signup from "../components/signup";
 
 const Page = props => {
   const router = useRouter();
@@ -21,33 +23,47 @@ const Page = props => {
   }
   console.log("section", section);
   return (
-    <div className="layouts">
+    <div
+      className="layout"
+      style={{
+        backgroundImage:
+          "url(" +
+          "https://educationalexploration.files.wordpress.com/2015/10/cropped-triangle-background-17.png" +
+          ")",
+        paddingTop: 10,
+
+        width: 1350,
+        height: 656
+      }}
+    >
       <Layout />
       <div key={props.data.id} style={{ marginLeft: 500 }}>
         <style jsx>
           {`
             .card {
               font-family: Arial, Helvetica, sans-serif;
-              border-radius: 40px;
-              box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.2),
-                -5px -5px 30px 7px rgba(0, 0, 0, 0.02);
-              cursor: pointer;
+              border-radius: 10px;
+              box-shadow: -1rem 0 3rem #000;
+              // cursor: pointer;
               float: left;
-              width: 150px;
-              height: 350px;
-              padding: 130px 10px;
-              margin-left: auto;
-              margin-right: auto;
-              margin-top: 30px;
+              width: 200px;
+              height: 280px;
+              padding: 100px 10px;
+              margin-left: -80px;
+              margin-right: 80px;
+              margin-top: 20px;
               text-align: center;
               align-items: center;
-              background-color: #ffff;
+              background-color: #17141d;
               transition: 0.4s ease-out;
             }
-            h1,
-            p {
+            h1 {
               text-align: center;
               margin-right: 300px;
+              color: #000000;
+              margin-top: 100px;
+            }
+            p {
               color: #000000;
             }
           `}
@@ -77,7 +93,13 @@ const Page = props => {
                 section.id
               }`}
             >
-              <a style={{ color: "blue" }}>{section.name}</a>
+              <a
+                style={{
+                  color: "#fff"
+                }}
+              >
+                {section.name}
+              </a>
             </Link>
           </div>
         ))}

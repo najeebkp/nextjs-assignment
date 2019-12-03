@@ -30,10 +30,10 @@ const Page = props => {
       <div style={{ marginLeft: 250 }}>
         <style jsx>
           {`
-            h1,
-            p {
+            h1 {
               text-align: center;
               color: #000000;
+              margin-top: 100px;
             }
           `}
         </style>

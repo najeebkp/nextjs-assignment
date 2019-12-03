@@ -1,12 +1,12 @@
 import React from "react";
 import Link from "next/link";
 import Head from "next/head";
-import Nav from "../components/nav";
-import Header from "../components/header";
-import Sidebar from "../components/sidebar";
+import NavBar from "../components/navbar";
+
+import Side from "../components/side";
 
 function Layout(props) {
-  return [<Header></Header>, <Sidebar></Sidebar>];
+  return [<NavBar></NavBar>, <Side></Side>];
 
   {
     props.children;

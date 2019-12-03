@@ -3,13 +3,14 @@ import Link from "next/link";
 import Head from "next/head";
 import Layout from "./layout";
 import Login from "../components/login";
-import Header from "../components/header";
-import "bootstrap/dist/css/bootstrap.css";
+import NavBar from "../components/navbar";
+import Side from "../components/side";
 
 function Form() {
   return (
     <div>
-      <Header></Header>
+      <NavBar></NavBar>
+
       <div>
         <Login></Login>
       </div>

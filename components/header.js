@@ -2,7 +2,7 @@ import React from "react";
 import Link from "next/link";
 import "bootstrap/dist/css/bootstrap.css";
 const Header = () => (
-  <nav className="navbar navbar-light bg-light">
+  <nav className="navbar " style={{ backgroundColor: "#9300FF" }}>
     <a className="navbar-brand" href="/classrooms">
       <img
         src="https://www.edisonlms.com/wp-content/uploads/2019/07/w38.png"

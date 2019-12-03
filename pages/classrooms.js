@@ -10,50 +10,77 @@ import Layout from "./layout";
 function About(props) {
   // console.warn('props',props)
   return (
-    <div classname="layouts">
+    <div
+      className="layouts"
+      style={{
+        backgroundImage:
+          "url(" +
+          "https://educationalexploration.files.wordpress.com/2015/10/cropped-triangle-background-17.png" +
+          ")",
+
+        paddingTop: 10
+      }}
+    >
       <Layout />
+      <div
+        classname="conatiner"
+        style={{
+          width: 1145,
+          height: 545,
+          marginLeft: 200,
+          marginTop: 100
+        }}
+      >
+        <div className="wrapp" style={{ marginLeft: 350 }}>
+          <h1
+            style={{
+              textAlign: "center",
+              marginRight: 350,
 
-      <div className="wrapp" style={{ marginLeft: 550 }}>
-        <h1 style={{ textAlign: "center", marginRight: 350 }}>Classes</h1>
-        <style jsx>
-          {`
-            .card {
-              font-family: Arial, Helvetica, sans-serif;
-              border-radius: 40px;
-              box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.2),
-                -5px -5px 30px 7px rgba(0, 0, 0, 0.02);
-              cursor: pointer;
-              float: left;
-              width: 159px;
-              height: 350px;
-              padding: 130px 10px;
-              margin-left: auto;
-              margin-right: auto;
-              margin-top: 30px;
-              text-align: center;
-              align-items: center;
-              vertical-align: middle;
-              background-color: #ffff;
-              transition: 0.4s ease-out;
-            }
-          `}
-        </style>
+              paddingTop: 15
+            }}
+          >
+            Classes
+          </h1>
+          <style jsx>
+            {`
+              .card {
+                font-family: Arial, Helvetica, sans-serif;
+                border-radius: 10px;
+                box-shadow: -1rem 0 3rem #000;
+                // cursor: pointer;
+                float: left;
+                width: 200px;
+                height: 280px;
+                padding: 100px 10px;
+                margin-left: -50px;
+                margin-right: 50px;
+                margin-top: 60px;
+                text-align: center;
+                align-items: center;
+                vertical-align: middle;
+                background-color: #17141d;
+                transition: 0.4s ease-out;
+              }
+            `}
+          </style>
 
-        {props.data.map(data => (
-          <div className="card" key={data.id}>
-            <img
-              src="https://mattharrisedd.com/wp-content/uploads/2016/05/ICON_Training.png"
-              width="60"
-              height="50"
-              alt=""
-            />
+          {props.data.map(data => (
+            <div className="card" key={data.id}>
+              <img
+                src="https://mattharrisedd.com/wp-content/uploads/2016/05/ICON_Training.png"
+                width="60"
+                height="50"
+                alt=""
+              />
 
-            {/* <h1>{data.name}</h1> */}
-            <Link href={`/about?id=${data.id}`} as={`/classrooms/${data.id}`}>
-              <a style={{ color: "blue" }}>{data.name}</a>
-            </Link>
-          </div>
-        ))}
+              {/* <h1>{data.name}</h1> */}
+              <Link href={`/about?id=${data.id}`} as={`/classrooms/${data.id}`}>
+                <a style={{ color: "white" }}>{data.name}</a>
+              </Link>
+            </div>
+          ))}
+        </div>
       </div>
     </div>
   );

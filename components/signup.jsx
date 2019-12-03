@@ -1,4 +1,5 @@
 import React, { Component } from "react";
+import "../css/main.css";
 
 const initialState = {
   name: "",
@@ -50,109 +51,108 @@ class Signup extends Component {
 
   render() {
     return (
-      <div className="display-5">
-        <div className="col-md-6 col-sm-12 mx-auto">
-          <link
-            href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
-            rel="stylesheet"
-          ></link>
-          <form onSubmit={this.handleSubmit}>
-            <fieldset>
-              <div id="legend">
-                <legend className="">Register</legend>
-              </div>
-              <div className="control-group ">
-                <label className="control-label" htmlfor="username">
-                  Username
-                </label>
-                <div className="controls">
-                  <input
-                    onChange={this.handleChange}
-                    type="text"
-                    id="name"
-                    name="name"
-                    placeholder=""
-                    className="input-xlarge"
-                    value={this.state.name}
-                  />
-                  <div style={{ color: "red" }}>{this.state.nameError}</div>
-                  <p className="help-block">
-                    Username can contain any letters or numbers.
-                  </p>
-                </div>
-              </div>
-
-              <div className="control-group">
-                <label className="control-label" htmlfor="email">
-                  E-mail
-                </label>
-                <div className="controls">
-                  <input
-                    onChange={this.handleChange}
-                    type="text"
-                    id="email"
-                    name="email"
-                    placeholder=""
-                    className="input-xlarge"
-                    value={this.state.email}
-                  />
-                  <div style={{ color: "red" }}>{this.state.emailError}</div>
-                  <p className="help-block">Please provide your E-mail</p>
-                </div>
-              </div>
-
-              <div className="control-group">
-                <label className="control-label" for="password">
-                  Password
-                </label>
-                <div className="controls">
-                  <input
-                    onChange={this.handleChange}
-                    type="password"
-                    id="password"
-                    name="password"
-                    placeholder=""
-                    className="input-xlarge"
-                    value={this.state.password}
-                  />
-                  <div style={{ color: "red" }}>{this.state.passwordError}</div>
-                  <p className="help-block">
-                    Password should be at least 4 characters
-                  </p>
-                </div>
-              </div>
-
-              <div className="control-group">
-                <label className="control-label" for="password_confirm">
-                  Password (Confirm)
-                </label>
-                <div className="controls">
-                  <input
-                    onChange={this.handleChange}
-                    type="password"
-                    id="password2"
-                    name="password2"
-                    placeholder=""
-                    className="input-xlarge"
-                    value={this.state.password2}
-                  />
-                  <div style={{ color: "red" }}>
-                    {this.state.password2Error}
+      <div class="container" style={{ marginTop: 110 }}>
+        <link
+          href="//maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+          rel="stylesheet"
+        ></link>
+        <div className="raw">
+          <div className="col-sm-9 col-md-7 col-lg-5 mx-auto">
+            <div className="card card-signin my-5">
+              <div className="card-body">
+                <h5 class="card-title text-center">Sign Up</h5>
+                <form className="form-signin" onSubmit={this.handleSubmit}>
+                  <div className="form-label-group ">
+                    <input
+                      onChange={this.handleChange}
+                      type="text"
+                      id="name"
+                      name="name"
+                      placeholder="Username"
+                      className="form-control"
+                      value={this.state.name}
+                    />
+                    <label for="name">Username</label>
+                    <div style={{ color: "red" }}>{this.state.nameError}</div>
+                    {/* <p className="help-block">
+                        Username can contain any letters or numbers.
+                      </p> */}
                   </div>
 
-                  <p className="help-block">Please confirm password</p>
-                </div>
-              </div>
+                  <div className="form-label-group">
+                    <div className="form-label-group">
+                      <input
+                        onChange={this.handleChange}
+                        type="text"
+                        id="email"
+                        name="email"
+                        placeholder="Email"
+                        className="form-control"
+                        value={this.state.email}
+                      />
+                      <div style={{ color: "red" }}>
+                        {this.state.emailError}
+                      </div>
+                      <label for="email">E-mail</label>
+                      {/* <p className="help-block">Please provide your E-mail</p> */}
+                    </div>
+                  </div>
 
-              <div className="control-group">
-                <div className="controls">
-                  <button type="submit" className="btn btn-primary">
-                    Register
-                  </button>
-                </div>
+                  <div className="form-label-group">
+                    {/* <div className="controls"> */}
+                    <input
+                      onChange={this.handleChange}
+                      type="password"
+                      id="password"
+                      name="password"
+                      placeholder="Password"
+                      className="form-control"
+                      value={this.state.password}
+                    />
+                    <div style={{ color: "red" }}>
+                      {this.state.passwordError}
+                    </div>
+                    <label for="password">Password</label>
+                    {/* <p className="help-block">
+                          Password should be at least 4 characters
+                        </p> */}
+                  </div>
+                  {/* </div> */}
+
+                  <div className="form-label-group">
+                    {/* <div className="controls"> */}
+                    <input
+                      onChange={this.handleChange}
+                      type="password"
+                      id="password2"
+                      name="password2"
+                      placeholder="Confirm Password"
+                      className="form-control"
+                      value={this.state.password2}
+                    />
+                    <div style={{ color: "red" }}>
+                      {this.state.password2Error}
+                    </div>
+                    <label for="password2">Password (Confirm)</label>
+
+                    {/* <p className="help-block">Please confirm password</p> */}
+                  </div>
+                  {/* </div> */}
+
+                  <div className="control-group">
+                    <div className="controls">
+                      <button
+                        type="submit"
+                        className="btn btn-lg btn-primary btn-block text-uppercase"
+                      >
+                        Register
+                      </button>
+                    </div>
+                  </div>
+                </form>
               </div>
-            </fieldset>
-          </form>{" "}
+            </div>
+          </div>
         </div>
       </div>
     );
