@@ -17,6 +17,10 @@ class NavBar extends Component {
           ></link> */}
           <link
             rel="stylesheet"
+            href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+          />
+          <link
+            rel="stylesheet"
             href="https://colorlib.com/preview/theme/edumark/css/themify-icons.css"
           ></link>
           <link
@@ -66,7 +70,7 @@ class NavBar extends Component {
                       <span style={{ color: "black" }}>log in</span>
                     </a>
                     <div className="live_chat_btn">
-                      <a className="boxed_btn_orange" href="signup">
+                      <a className="boxed_btn_orange" href="/signup">
                         <i className="fa fa-user"></i>
                         <span>SignUp</span>
                       </a>

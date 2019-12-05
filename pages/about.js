@@ -9,6 +9,7 @@ import Nav from "./layout";
 import Header from "../components/header";
 import NavBar from "../components/navbar";
 import Signup from "../components/signup";
+import Side from "./side";
 
 const Page = props => {
   const router = useRouter();
@@ -37,6 +38,7 @@ const Page = props => {
       }}
     >
       <Layout />
+
       <div key={props.data.id} style={{ marginLeft: 500 }}>
         <style jsx>
           {`

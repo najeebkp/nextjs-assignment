@@ -14,28 +14,28 @@
             "id": 13,
             "name": "block name 13",
             "description": "block description 13",
-            "type": "VIDEO",
+            "type": "https://www.youtube.com/embed/iRo18pUs61Q",
             "parent_id": 1
           },
           {
             "id": 14,
             "name": "block name 14",
             "description": "block description 14",
-            "type": "VIDEO",
+            "type": "https://www.youtube.com/embed/a9VZEgbHxrg",
             "parent_id": 1
           },
           {
             "id": 15,
             "name": "block name 15",
             "description": "block description 15",
-            "type": "VIDEO",
+            "type": "https://www.youtube.com/embed/L2OsgmirBwo",
             "parent_id": 1
           },
           {
             "id": 16,
             "name": "block name 16",
             "description": "block description 16",
-            "type": "VIDEO",
+            "type": "https://www.youtube.com/embed/_rf_qw9BfTc",
             "parent_id": 1
           }
         ]
@@ -50,28 +50,28 @@
             "id": 17,
             "name": "block name 17",
             "description": "block description 17",
-            "type": "VIDEO",
+            "type": "https://www.youtube.com/embed/a9VZEgbHxrg",
             "parent_id": 2
           },
           {
             "id": 18,
             "name": "block name 18",
             "description": "block description 18",
-            "type": "VIDEO",
+            "type": "https://www.youtube.com/embed/iRo18pUs61Q",
             "parent_id": 2
           },
           {
             "id": 19,
             "name": "block name 19",
             "description": "block description 19",
-            "type": "VIDEO",
+            "type": "https://www.youtube.com/embed/L2OsgmirBwo",
             "parent_id": 2
           },
           {
             "id": 20,
             "name": "block name 20",
             "description": "block description 20",
-            "type": "VIDEO",
+            "type": "https://www.youtube.com/embed/a9VZEgbHxrg",
             "parent_id": 2
           }
         ]
@@ -86,28 +86,28 @@
             "id": 21,
             "name": "block name 21",
             "description": "block description 21",
-            "type": "VIDEO",
+            "type": "https://www.youtube.com/embed/L2OsgmirBwo",
             "parent_id": 3
           },
           {
             "id": 22,
             "name": "block name 22",
             "description": "block description 22",
-            "type": "VIDEO",
+            "type": "https://www.youtube.com/embed/iRo18pUs61Q",
             "parent_id": 3
           },
           {
             "id": 23,
             "name": "block name 23",
             "description": "block description 23",
-            "type": "VIDEO",
+            "type": "https://www.youtube.com/embed/a9VZEgbHxrg",
             "parent_id": 3
           },
           {
             "id": 24,
             "name": "block name 24",
             "description": "block description 24",
-            "type": "VIDEO",
+            "type": "https://www.youtube.com/embed/L2OsgmirBwo",
             "parent_id": 3
           }
         ]
@@ -122,28 +122,28 @@
             "id": 25,
             "name": "block name 25",
             "description": "block description 25",
-            "type": "VIDEO",
+            "type": "https://www.youtube.com/embed/a9VZEgbHxrg",
             "parent_id": 4
           },
           {
             "id": 26,
             "name": "block name 26",
             "description": "block description 26",
-            "type": "VIDEO",
+            "type": "https://www.youtube.com/embed/iRo18pUs61Q",
             "parent_id": 4
           },
           {
             "id": 27,
             "name": "block name 27",
             "description": "block description 27",
-            "type": "VIDEO",
+            "type": "https://www.youtube.com/embed/L2OsgmirBwo",
             "parent_id": 4
           },
           {
             "id": 28,
             "name": "block name 28",
             "description": "block description 28",
-            "type": "VIDEO",
+            "type": "https://www.youtube.com/embed/a9VZEgbHxrg",
             "parent_id": 4
           }
         ]

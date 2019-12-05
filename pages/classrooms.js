@@ -6,38 +6,20 @@ import PostData from "../public/sample_data.json";
 import { useRouter } from "next/router";
 import "bootstrap/dist/css/bootstrap.css";
 import Layout from "./layout";
-
 function About(props) {
-  // console.warn('props',props)
+  // console.warn("props", props);
   return (
-    <div
-      className="layouts"
-      style={{
-        backgroundImage:
-          "url(" +
-          "https://educationalexploration.files.wordpress.com/2015/10/cropped-triangle-background-17.png" +
-          ")",
-
-        paddingTop: 10
-      }}
-    >
+    <div className="layouts">
+      <link
+        rel="stylesheet"
+        href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+      />
       <Layout />
-      <div
-        classname="conatiner"
-        style={{
-          width: 1145,
-          height: 545,
-          marginLeft: 200,
-          marginTop: 100
-        }}
-      >
-        <div className="wrapp" style={{ marginLeft: 350 }}>
+      <div className="conatiner">
+        <div className="wrapp">
           <h1
             style={{
-              textAlign: "center",
-              marginRight: 350,
-
-              paddingTop: 15
+              textAlign: "center"
             }}
           >
             Classes
@@ -47,19 +29,21 @@ function About(props) {
               .card {
                 font-family: Arial, Helvetica, sans-serif;
                 border-radius: 10px;
-                box-shadow: -1rem 0 3rem #000;
+
                 // cursor: pointer;
-                float: left;
-                width: 200px;
-                height: 280px;
-                padding: 100px 10px;
-                margin-left: -50px;
-                margin-right: 50px;
-                margin-top: 60px;
-                text-align: center;
+                float: center;
+                width: 50%;
+
+                height: auto;
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+                margin-top: 5px;
+
+                // text-align: center;
                 align-items: center;
                 vertical-align: middle;
-                background-color: #17141d;
+                background-color: #f1f0f0;
                 transition: 0.4s ease-out;
               }
             `}
@@ -73,10 +57,10 @@ function About(props) {
                 height="50"
                 alt=""
               />
-
+              &emsp;
               {/* <h1>{data.name}</h1> */}
-              <Link href={`/about?id=${data.id}`} as={`/classrooms/${data.id}`}>
-                <a style={{ color: "white" }}>{data.name}</a>
+              <Link href={`/side?id=${data.id}`} as={`/classrooms/${data.id}`}>
+                <a style={{ color: "black" }}>{data.name}</a>
               </Link>
             </div>
           ))}

@@ -14,7 +14,7 @@
             "id": 13,
             "name": "block name 13",
             "description": "block description 13",
-            "type": "VIDEO",
+            "type": "https://www.youtube.com/embed/iRo18pUs61Q",
             "parent_id": 1
           },
           {
